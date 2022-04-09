@@ -22,7 +22,6 @@ function dibujar() {
         pincel.beginPath();
         pincel.arc(700,100,20,0,2*Math.PI);
         pincel.stroke();
-        dibujarLetraIncorrecta(letraIncorrecta);
     }
 
     //esto dibuja el cuerpo
