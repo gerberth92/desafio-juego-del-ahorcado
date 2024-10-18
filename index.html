@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Juego del Ahorcado</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Juego del Ahorcado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
+<body>
+  <header>
     <div style="text-align:center; margin: 50px 0px;">
       <h1 class="titulo">Ahorcado</h1>
       <button class="btn" id="iniciar-juego">INICIAR JUEGO</button>
     </div>
+  </header>
+  <main>
+    <div style="text-align:center" id="letra-errada"></div> <br>
 
-    <div style="text-align:center" id = "letra-errada"></div> <br>
+    <div style="text-align:center" id="guiones"></div> <br>
 
-    <div style="text-align:center" id = "guiones"></div> <br>
-    
     <div style="text-align:center">
-      <input class="text-input" type="text" id="input-nueva-palabra" pattern="[A-Z]" placeholder="Escriba una letra">
-      <button class="btn" id="nueva-palabra">COMPARAR</button> 
+      <input type="text" id="input" maxlength="1" placeholder="Escriba una letra" disabled>
+      <button class="btn" id="comparar" style="display: none;">COMPARAR</button>
     </div>
 
     <div style="text-align:center;">
@@ -30,14 +32,7 @@
 
     <script type="text/javascript" src="ahorcado.js"></script>
     <script type="text/javascript" src="canvas.js"></script>
+  </main>
+</body>
 
-    <div class="footer">
-      Derechos Reservados <br>
-      © 2022 | GERBERTH C. <br>
-      Lima, Peru <br>
-      Alumno Alura Latam <br>
-      #challengeonelogicalatam    
-    </div>
-
-  </body>
 </html>
